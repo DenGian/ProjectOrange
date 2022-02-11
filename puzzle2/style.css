@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h1 {
+    color: rgb(255,130,0);
+    z-index: 10000;
+    position: absolute;
+    left: 75px;
+    bottom: 75px;
+}
+#page {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: black;
+    overflow: hidden;
+}
+.anim #spiral {
+	transform: rotate(0deg);
+	transform-origin: 50% 50%;
+	animation: spin 10s linear forwards;
+	overflow: visible;
+    margin-top: calc(-25%);
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(1440deg);
+	}
+}
+
+.anim .path {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	stroke-width: 0.001;
+	stroke: #000;
+	animation: dash 10s ease-in forwards;
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 100;
+		stroke-width: 0.001;
+		stroke: #000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		stroke-width: 0.04167;
+		stroke: orange;
+	}
+}

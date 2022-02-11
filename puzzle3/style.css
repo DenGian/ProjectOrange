@@ -1,0 +1,35 @@
+ *{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      
+    }
+
+    .pentagon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 0;
+      width: 180px;
+      border-top: 180px solid #ffa500;
+      border-left: 90px solid transparent;
+      border-right: 90px solid transparent;
+    }
+   
+    .pentagon:after{
+      position: absolute;
+      content: '';
+      border-bottom: 180px solid #ffa500;
+      border-left: 180px solid transparent;
+      border-right: 180px solid transparent;
+      bottom: 180px;
+      left: -90px;
+    }
+    h1 {
+      color: rgb(255,130,0);
+      z-index: 3;
+      position: absolute;
+      left: 75px;
+      bottom: 75px;
+  }

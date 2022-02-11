@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Puzzle 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page">
+        <h1 style="color:55,140,0;font-size:100px;">2</h1>  
+	<div class='page' id='full' onclick="start()" onmousedown="grow" onmouseup="reset">
+		<svg id='spiral' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox="0 0 1 1" >
+			<circle class='path' cx="0.5" cy="0.5" r="0.02083" stroke="white" stroke-width="0" fill="none"/>
+			<path id='fullpath' class='path' stroke='white' stroke-width='0' fill='none' pathLength="100"/>
+		</svg>
+	</div>
+    </div>
+
+    <script src="index.js"></script>
+<--!This puzzle was made possible by https://gist.github.com/mortoray/5b8eb860d5de706bbb66f37f27b1259d-->
+</body>
+</html>
