@@ -15,6 +15,7 @@ body {
     justify-content: center;
     height:100vh;
     background-color:black;
+    overflow:hidden;
   }
   
   .basketball {
