@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+#lights{
+}
+
+.light {
+    height: 120px;
+    width : 120px;
+    border-radius: 50%;
+    opacity : 0.3; 
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
+  .stop {background-color: red;}
+  .slow {background-color: orange;}
+  .go {background-color: green;}
+  .on {opacity: 1;}
+  
+body {
+    background-color : black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  h1 {
+    color: rgb(255,130,0);
+    z-index: 3;
+    position: absolute;
+    left: 75px;
+    bottom: 75px;
+}

@@ -2,34 +2,44 @@
       margin: 0;
       padding: 0;
       background-color: black;
-      
     }
 
-    .pentagon{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 0;
-      width: 180px;
-      border-top: 180px solid #ffa500;
-      border-left: 90px solid transparent;
-      border-right: 90px solid transparent;
+  body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+    #page {
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background: black;
+      overflow: hidden;
+      
     }
-   
-    .pentagon:after{
+  #triangle{
+      border: solid 400px;
+      background: black;
+      border-color: transparent transparent orange transparent;
       position: absolute;
-      content: '';
-      border-bottom: 180px solid #ffa500;
-      border-left: 180px solid transparent;
-      border-right: 180px solid transparent;
-      bottom: 180px;
-      left: -90px;
-    }
+      width: 23%;
+      height:30%;
+      position: absolute;
+      top:-400px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      
+      cursor: pointer;
+      
+  }
     h1 {
       color: rgb(255,130,0);
       z-index: 3;
       position: absolute;
       left: 75px;
       bottom: 75px;
-  }
+      border:1px solid white;
+    }
+    
+  

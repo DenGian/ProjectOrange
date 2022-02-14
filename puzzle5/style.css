@@ -1,0 +1,95 @@
+*{
+    padding: 0.5em;
+    margin:0;
+}
+h1 {
+    color: rgb(255,130,0);
+    z-index: 3;
+    position: absolute;
+    left: 75px;
+    bottom: 75px;
+}
+body{
+    background-color:rgb(8,8,8);
+}
+html, body, svg { height: 100%; width: 100%; margin: 0; }
+
+.svg-rudolph .face { fill: #bc8c51; }
+.svg-rudolph .nose { fill: rgb(242,133,0); }
+.svg-rudolph .nose-highlight { fill: #ffffff; }
+
+.svg-rudolph .nose {
+  -webkit-animation-name: nose-glow;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+  
+  animation-name: nose-glow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  
+}
+
+.svg-rudolph .nose-highlight {
+  fill-opacity: 0;
+  
+  -webkit-animation-name: highlight-fade;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+  
+  animation-name: highlight-fade;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes highlight-fade { 
+  0% { fill-opacity: 0; }
+  25% { fill-opacity: 0; }
+  100% { fill-opacity: 1; }
+}
+
+@keyframes highlight-fade { 
+  0% { fill-opacity: 0; }
+  25% { fill-opacity: 0; }
+  100% { fill-opacity: 1; }
+}
+
+.svg-rudolph .eye {
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite; 
+  -webkit-transform-origin: 50%;
+  
+  animation-name: blink;
+  animation-duration: 8s;
+  animation-iteration-count: infinite; 
+  transform-origin: 50%;
+}
+
+@-webkit-keyframes blink { 
+  0% { -webkit-transform: scaleX(1) scaleY(1); } 
+  1% { -webkit-transform: scaleX(1.3) scaleY(0.1); } 
+  2% { -webkit-transform: scaleX(1) scaleY(1); } 
+  60% { -webkit-transform: scaleX(1) scaleY(1); } 
+  61% { -webkit-transform: scaleX(1.3) scaleY(0.1);} 
+  62% { -webkit-transform: scaleX(1) scaleY(1); } 
+  100% { -webkit-transform: scaleX(1) scaleY(1); }
+}
+
+
+@keyframes blink { 
+  0% { transform: scaleX(1) scaleY(1); } 
+  1% { transform: scaleX(1.3) scaleY(0.1); } 
+  2% { transform: scaleX(1) scaleY(1); } 
+  60% { transform: scaleX(1) scaleY(1); } 
+  61% { transform: scaleX(1.3) scaleY(0.1);} 
+  62% { transform: scaleX(1) scaleY(1); } 
+  100% { transform: scaleX(1) scaleY(1); }
+}

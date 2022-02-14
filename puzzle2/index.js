@@ -63,29 +63,26 @@ function nuancedPath() {
 let path = nuancedPath()
 fullPath.setAttribute('d', path)
 
-function start() {
+
+function mouseDown() {
 	let fullPath = document.getElementById('full')
 	if(fullPath.className.indexOf('anim') == -1) {
 		fullPath.className += ' anim'
-	} else {
-		fullPath.className = fullPath.className.replace( ' anim', '' )
 	}
 }
-
-function MouseDown() {
-	let fullPath = document.getElementById('grow')
-	if(fullPath.className.indexOf('anim') == -1) {
-		fullPath.className += ' anim'
-	} else {
-		fullPath.className = fullPath.className.replace( ' anim', '' )
-	}
-}
-
-function start() {
+function mouseUp(){
 	let fullPath = document.getElementById('full')
-	if(fullPath.className.indexOf('anim') == -1) {
-		fullPath.className += ' anim'
-	} else {
-		fullPath.className = fullPath.className.replace( ' anim', '' )
+	let spiral = document.getElementById('fullpath')
+	console.log(window.getComputedStyle(spiral).strokeDashoffset);
+	if(window.getComputedStyle(spiral).strokeDashoffset == "0px"){
+		location.href = "http://127.0.0.1:5500/puzzle3/index.html";
 	}
+	fullPath.className = fullPath.className.replace( ' anim', '' )
+
 }
+function doStuff() {
+	let spiral = document.getElementById('fullpath')
+	console.log(window.getComputedStyle(spiral).strokeDashoffset);
+	setTimeout(doStuff, 1000);
+ }
+ setTimeout(doStuff, 1000);

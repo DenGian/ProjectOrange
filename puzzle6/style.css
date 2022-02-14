@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .wrapper {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+  .wrapper::after {
+    content: "";
+    position: absolute;
+    right: -235px;
+    top: -350px;
+    width: 400px;
+    height: 500px;
+    background-color: orange;
+    filter: blur(50px);
+    border-radius: 50%;
+    z-index: -50;
+    animation: flicker-background 600ms ease-in infinite;
+    opacity: 0.9;
+  }
+  @keyframes flicker-background {
+    50% {
+      transform: scale(0.98);
+    }
+  }
+  
+  .spark {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 1px;
+    bottom: 0;
+    left: 0;
+    filter: blur(1px);
+    background: yellow;
+    z-index: -1;
+  }
+  /* Random animation timers */
+  .spark1 {
+    animation: flicker-spark1 1500ms ease-out infinite;
+  }
+  .spark2 {
+    animation: flicker-spark2 1000ms ease-out infinite;
+  }
+  .spark3 {
+    animation: flicker-spark3 2000ms ease-out infinite;
+  }
+  .spark4 {
+    animation: flicker-spark4 1300ms ease-out infinite;
+  }
+  .spark5 {
+    animation: flicker-spark5 1800ms ease-out infinite;
+  }
+  
+  @keyframes flicker-spark1 {
+    0% {
+      opacity: 1;
+      bottom: 50px;
+    }
+    100% {
+      opacity: 0;
+      bottom: 350px;
+      left: 50px;
+    }
+  }
+  @keyframes flicker-spark2 {
+    0% {
+      opacity: 1;
+      bottom: 50px;
+      left: 50px;
+    }
+    100% {
+      opacity: 0;
+      bottom: 350px;
+      left: 100px;
+    }
+  }
+  @keyframes flicker-spark3 {
+    0% {
+      opacity: 1;
+      bottom: 50px;
+      left: 50px;
+    }
+    100% {
+      opacity: 0;
+      bottom: 350px;
+      left: -50px;
+    }
+  }
+  @keyframes flicker-spark4 {
+    0% {
+      opacity: 1;
+      bottom: 50px;
+      left: 0px;
+    }
+    100% {
+      opacity: 0;
+      bottom: 350px;
+      left: -50px;
+    }
+  }
+  @keyframes flicker-spark5 {
+    0% {
+      opacity: 1;
+      bottom: 50px;
+      left: -10px;
+    }
+    100% {
+      opacity: 0;
+      bottom: 350px;
+      left: 70px;
+    }
+  }
+  
+  .red {
+    width: 80px;
+    height: 80px;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orangered;
+  }
+  .gold {
+    left: 18px;
+    width: 45px;
+    height: 45px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px orangered;
+  }
+  .white {
+    left: 22px;
+    width: 35px;
+    height: 35px;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+  
+  .flame-wrapper {
+    position: relative;
+    animation: flicker 600ms ease-in infinite;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes flicker {
+    0% {
+      transform: rotate(-1deg);
+    }
+    20% {
+      transform: rotate(2deg) scaleY(1.2);
+    }
+    40% {
+      transform: rotate(-1deg);
+    }
+    60% {
+      transform: rotate(1deg);
+    }
+    80% {
+      transform: rotate(-1deg) scaleY(0.9);
+    }
+    100% {
+      transform: rotate(1deg);
+    }
+  }
+  
+  .log {
+    width: 20px;
+    height: 80px;
+    filter: blur(1px);
+    background: linear-gradient(#e66465, #5d5e55);
+    position: absolute;
+    z-index: -5;
+    top: -20px;
+    left: 30px;
+  }
+  .log-left {
+    transform: rotate(60deg);
+  }
+  .log-right {
+    transform: rotate(-60deg);
+  }
+  h1 {
+    color: rgb(255,130,0);
+    z-index: 3;
+    position: absolute;
+    left: 75px;
+    bottom: 75px;
+}
