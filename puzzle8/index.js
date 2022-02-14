@@ -7,7 +7,7 @@ switchClick.addEventListener("click", function() {
 });
 function doNextPage() {
 
-  location.href = "https://dengian.github.io/ProjectOrange/puzzle9/index.html";
+  location.href = "http://127.0.0.1:5500/puzzle9/index.html";
  }
  function doPageOrange() {
   /*  position: absolute;

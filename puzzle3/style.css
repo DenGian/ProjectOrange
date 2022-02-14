@@ -30,6 +30,7 @@
       left: calc(50vw - 400px);
       right: 0;
       cursor: pointer;
+      transition: 1.5s;
       
   } 
   

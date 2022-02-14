@@ -10,7 +10,7 @@ triangle.addEventListener("click", function() {
     this.style.borderColor = "transparent transparent orange transparent";
     console.log(width)
     if (width >6800) {
-        location.href = "https://dengian.github.io/ProjectOrange/puzzle4/index.html";
+        location.href = "http://127.0.0.1:5500/puzzle4/index.html";
     }
     
 });
