@@ -1,16 +1,17 @@
+let bas = document.getElementById("bas");
+let counter = 0;
+let goal = 7;
 
-var LIGHTS = document.getElementsByClassName("light");
+bas.addEventListener("click", function() {
+    if (counter >= goal) {
+        location.href = "https://dengian.github.io/ProjectOrange/puzzle8/index.html";
+       // alert('gewonnen');
+        //stuur naar volgende puzzel
+    }
+    else{
+        counter++;
+        //log verstoppen / verwijdern
+        console.log(counter + " aantal keer geklikt");
+    }
 
-
-function allOff() {
-  for (var i=0; i<LIGHTS.length; i = i+1) {
-    LIGHTS[i].classList.remove("on");
-  }
-}
-
-
-function switchLight(lightNumber) {
-  allOff();
-  var light = LIGHTS[lightNumber];
-  light.classList.add("on");
-}
+});

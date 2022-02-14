@@ -50,15 +50,30 @@ body {
 #text2{
     position: absolute;
     bottom: 40px;
-    right: 160px;
+    right: 200px;
     width: 400px;
     height: 160px;
     border: 3px transparent #73AD21;
     z-index: 500;
+    display:flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
 }
 .material-icons{
-    position: absolute;
-    right:370px;
-    bottom:60px;
+    position: relative;
+    z-index: 400000;
+    width: 30px;
+    height: 30px;
     color:black ;
+    margin:auto;
+    display: inline!important;
+}
+#replay{
+    margin:auto;
+    position: relative;
+    background-color:orange;
+    width: 100px;
+    height: 100px;
+    z-index: 3000;
 }

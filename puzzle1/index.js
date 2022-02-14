@@ -9,6 +9,6 @@ sun.addEventListener("click", function() {
     width *= 1.5;
     height *= 1.5;
     if (width > screen.availWidth && height > screen.availHeight) {
-        location.href = "http://127.0.0.1:5500/puzzle2/index.html";
+        location.href = "https://dengian.github.io/ProjectOrange/puzzle2/index.html";
     }
 });

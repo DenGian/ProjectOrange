@@ -75,7 +75,7 @@ function mouseUp(){
 	let spiral = document.getElementById('fullpath')
 	console.log(window.getComputedStyle(spiral).strokeDashoffset);
 	if(window.getComputedStyle(spiral).strokeDashoffset == "0px"){
-		location.href = "http://127.0.0.1:5500/puzzle3/index.html";
+		location.href = "https://dengian.github.io/ProjectOrange/puzzle3/index.html";
 	}
 	fullPath.className = fullPath.className.replace( ' anim', '' )
 
