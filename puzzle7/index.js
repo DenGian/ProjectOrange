@@ -4,7 +4,7 @@ let goal = 7;
 
 bas.addEventListener("click", function() {
     if (counter >= goal) {
-        location.href = "http://127.0.0.1:5500/puzzle8/index.html";
+        location.href = "https://dengian.github.io/ProjectOrange/puzzle8/index.html";
        // alert('gewonnen');
         //stuur naar volgende puzzel
     }

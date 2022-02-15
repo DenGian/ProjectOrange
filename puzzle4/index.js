@@ -23,7 +23,7 @@ circle.addEventListener("click", function() {
 });
 function doNextPage() {
 
-  location.href = "http://127.0.0.1:5500/puzzle5/index.html";
+  location.href = "https://dengian.github.io/ProjectOrange/puzzle5/index.html";
  }
  function doPageOrange() {
   /*  position: absolute;
